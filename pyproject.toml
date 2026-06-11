@@ -1,0 +1,38 @@
+[project]
+name = "behavioral-analysis-template"
+version = "0.1.0"
+description = "Dorman Lab behavioral analysis project"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "duckdb",
+  "h5py",
+  "ipykernel",
+  "ipympl",
+  "ipywidgets",
+  "matplotlib",
+  "numpy",
+  "openpyxl",
+  "pandas",
+  "pingouin",
+  "polars",
+  "pyarrow",
+  "scikit-learn",
+  "scipy",
+  "seaborn",
+  "statannotations",
+  "statsmodels",
+  "tqdm"
+]
+
+[dependency-groups]
+dev = [
+  "pytest",
+  "ruff"
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
